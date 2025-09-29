@@ -4,8 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
+    <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="C:\Users\lab_services_student\OneDrive - ADvTECH Ltd\Desktop\ps_website\css\style.css">
 </head>
 <body>
-    
+    <hr>
+    <div style="display: flex; align-items: center;">
+        <img src="_images/PlayStation_App_Icon.jpg" alt="Playstation logo" width="100" height="100" style="margin-right: 16px;">
+        <h1>SONY</h1>
+    </div>
+
+    <hr>
+    <!--Navigation bar-->
+    <nav>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex;">
+            <li style="margin-right: 20px;"><a href="index.html">Home </a></li>
+            <li style="margin-right: 20px;"><a href="about.html">About</a></li>
+            <li style="margin-right: 20px;"><a href="contact.html">Contact</a></li>
+            <li style="margin-right: 20px;"><a href="products.html">Products</a></li>
+            <li><a href="enquiry.html">enquiry</a></li>
+        </ul>
+        <hr>
+    <form action="search.html" method="get" style="display: inline-block; vertical-align: middle;">
+        <input type="text" name="query" placeholder="Search..." style="width: 300px;">
+        <button type="submit">Search</button>
+    </form>
+    <!-- Cart icon (simple SVG) -->
+    <a href="cart.html" title="View Cart" style="display: inline-flex; align-items: center; margin-left: 16px; vertical-align: middle;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0070d1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"/>
+            <circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h7.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        <span style="margin-left: 6px;">Cart</span>
+    </a>
+    </li>
+    </nav>
+    <hr>
+    <p>Welcome to the SONY home page!</p>
+  
+    <hr>
+</body>  
+    <center> 
+<a href="/en-us/games/astro-bot/" style="display: block; width: 100vw; max-width: 100%; margin: 0 auto;">
+    <img src="https://gmedia.playstation.com/is/image/SIEPDC/astro-bot-store-art-01-en-04jul24?$1200px$" alt="ASTRO BOT" style="display: block; width: 100vw; max-width: 100%; height: auto; margin: 0;"/>
+</a>
+<hr>
+<img src="_images/ps_deal60%.jpg" alt="Promotional banner showing 60 percent discount on PlayStation games, bold text over a blue background with PlayStation symbols, energetic and inviting mood" style="display: block; width: 100vw; max-width: 100%; height: auto; margin: 0; position: relative; left: 50%; right: 50%; transform: translateX(-50%);" />
+
+<center/>
+<!-- New content starts here -->
+<section style="padding: 32px 0; background: #f9f9f9;">
+    <h2 style="text-align:center;">Featured Products</h2>
+    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 24px;">
+        <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #ddd; padding: 16px; width: 220px; text-align: center;">
+            <img src="_images/ps5.jpg" alt="PlayStation 5 Console" style="width: 100%; height: 120px; object-fit: cover; border-radius: 4px;">
+            <h3>PlayStation 5</h3>
+            <p>Experience lightning-fast loading and immersive gaming.</p>
+            <a href="products.html" style="color: #0070d1;">View Details</a>
+        </div>
+        <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #ddd; padding: 16px; width: 220px; text-align: center;">
+            <img src="_images/ps5_controller2.jpg" alt="DualSense Controller" style="width: 100%; height: 120px; object-fit: cover; border-radius: 4px;">
+            <h3>DualSense Controller</h3>
+            <p>Feel the action with haptic feedback and adaptive triggers.</p>
+            <a href="products.html" style="color: #0070d1;">View Details</a>
+        </div>
+        <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #ddd; padding: 16px; width: 220px; text-align: center;">
+            <img src="_images/ps_vr.jpg" alt="PlayStation VR" style="width: 100%; height: 120px; object-fit: cover; border-radius: 4px;">
+            <h3>PlayStation VR2</h3>
+            <p>Step into new worlds with next-gen virtual reality.</p>
+            <a href="products.html" style="color: #0070d1;">View Details</a>
+        </div>
+    </div>
+</section>
+
+<section style="padding: 32px 0;">
+    <h2 style="text-align:center;">Latest News & Updates</h2>
+    <ul style="max-width: 600px; margin: 24px auto; font-size: 1.1em;">
+        <li><strong>August 2025:</strong> New Astro Bot adventure announced! <a href="/en-us/games/astro-bot/">Learn more</a></li>
+        <li><strong>July 2025:</strong> Summer Sale! Up to 60% off select PlayStation games.</li>
+        <li><strong>June 2025:</strong> PlayStation VR2 now available worldwide.</li>
+    </ul>
+</section>
+
+<section style="padding: 32px 0; background: #f9f9f9;">
+    <h2 style="text-align:center;">Subscribe to Our Newsletter</h2>
+    <form style="max-width: 400px; margin: 0 auto; text-align: center;">
+        <input type="email" placeholder="Enter your email" required style="padding: 8px; width: 70%; border-radius: 4px; border: 1px solid #ccc;">
+        <button type="submit" style="padding: 8px 16px; border-radius: 4px; background: #0070d1; color: #fff; border: none; margin-left: 8px;">Subscribe</button>
+    </form>
+</section>
+
+<footer style="text-align: center; padding: 10px; background-color: #f1f1f1; margin-top: 20px;">
+    <p>&copy; 2024 SONY. All rights reserved.</p>
 </body>
 </html>

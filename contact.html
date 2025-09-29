@@ -4,8 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact page</title>
+     <!-- Link to your CSS file -->
+
+  <link rel="stylesheet" href="C:\Users\lab_services_student\OneDrive - ADvTECH Ltd\Desktop\ps_website\css\stylecontact.css">
 </head>
 <body>
-    
+      <!--Navigation bar-->
+    <nav>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex;">
+            <li style="margin-right: 20px;"><a href="index.html">Home</a></li>
+            <li style="margin-right: 20px;"><a href="about.html">About</a></li>
+            <li style="margin-right: 20px;"><a href="contact.html">Contact</a></li>
+            <li style="margin-right: 20px;"><a href="products.html">Products</a></li>
+            <li><a href="enquiry.html">enquiry</a></li>
+        </ul>
+    </nav>
+    <hr>   
+     
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact PlayStation Support</h1>
+  </header>
+
+  <main class="container">
+    <h2>We're Here to Help</h2>
+    <p>If you have questions about your account, console, or games, contact us using the form below or explore support links.</p>
+
+    <form action="/submit-form" method="POST" style="max-width: 400px; margin: 20px 0; padding: 20px; border: 1px solid #ccc; border-radius: 8px; display: flex; flex-direction: column; gap: 15px;">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <input type="submit" value="Send Message" style="width: 100%; padding: 10px;"/>
+    </form>
+
+    <div class="support-links">
+        <h2>Quick Support Links</h2>
+        <a href="https://www.playstation.com/support/" style="display: block;">Visit Support Center</a>
+        <a href="https://www.playstation.com/account/" style="display: block;">Account Help</a>
+        <a href="https://www.playstation.com/games/" style="display: block;">Game Support</a>
+        <a href="https://status.playstation.com/" style="display: block;">Network Status</a>
+    </div>
+  </main>
+    <section>
+      <h2>SOCIALS</h2>
+      <ul>
+        <li><a href="https://twitter.com/PlayStation" target="_blank">Twitter</a></li>
+        <li><a href="https://www.facebook.com/PlayStation" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/PlayStation" target="_blank">Instagram</a></li>
+        <li><a href="https://www.youtube.com/PlayStation" target="_blank">YouTube</a></li>
+      </ul>
+    </section>
+
+
+  <footer>
+    &copy; 2025 Sony Interactive Entertainment LLC. All rights reserved. PlayStation and the "PS" family logo are registered trademarks of Sony Interactive Entertainment Inc.
+  </footer>
+
+</body>
+</html>
 </body>
 </html>

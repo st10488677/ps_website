@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product page</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Product page</title>
+     <!-- Link to your CSS file -->
+     <link rel="stylesheet" href="/css/styleproducts.css">
+
 </head>
 <body>
+        <!--Navigation bar-->
+    <nav>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex;">
+            <li style="margin-right: 20px;"><a href="index.html">Home</a></li>
+            <li style="margin-right: 20px;"><a href="about.html">About</a></li>
+            <li style="margin-right: 20px;"><a href="contact.html">Contact</a></li>
+            <li style="margin-right: 20px;"><a href="products.html">Products</a></li>
+            <li><a href="enquiry.html">enquiry</a></li>
+        </ul>
+    </nav>
+    <hr>   
+    <h1>PRODUCTS</h1>
+<hr>
+         <!--search bar-->
+    <form action="search.html" method="get">
+        <input type="text" name="query" placeholder="Search..." style="width: 300px;">
+     <button type="submit">Search</button>
+    </form>
+     <hr>
+      <!-- Shopping cart section -->
+
+<div id="cart" style="border:1px solid #ccc; padding:16px; margin:20px 0; max-width:400px;">
+     <h2>Your Cart</h2>
+     <ul id="cart-items"></ul>
+     <p id="cart-empty-msg">Your cart is empty.</p>
+</div>
+<script>
+    // Get all "Add to cart" buttons and product info
+    const cartItems = [];
+    const cartList = document.getElementById('cart-items');
+    const cartEmptyMsg = document.getElementById('cart-empty-msg');
+    const buttons = document.querySelectorAll('button[type="button"]');
+
+    buttons.forEach((btn) => {
+     btn.addEventListener('click', function() {
+         // Find the product name and price (previous sibling elements)
+         const product = btn.previousElementSibling.previousElementSibling.previousElementSibling.textContent.replace('PRODUCT: ', '');
+         const price = btn.previousElementSibling.previousElementSibling.textContent.replace('PRICE: ', '');
+         cartItems.push({ product, price });
+
+         // Update cart display
+         cartList.innerHTML = '';
+         cartItems.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = `${item.product} - ${item.price}`;
+          cartList.appendChild(li);
+         });
+         cartEmptyMsg.style.display = cartItems.length ? 'none' : 'block';
+     });
+    });
+</script>
+        <hr>
+     <!-- Product listings -->
+     <img src="_images/ps5_2.avif" alt="Playstation 5" width="400" height="300">
+     <p>PRODUCT: Playstation 5 - White Console</p>
+     <p>PRICE: €575.00</p>
+<P>In stock</p> <button type="button">Add to cart</button>
+     <hr>
+
+        <img src="_images/sony-playstation-5-slim-digital.avif" alt="Playstation 5" width="400" height="300">
+     <p>PRODUCT: Playstation 5 PS5 1TB Slim White Console</p>
+     <p>PRICE: €549.99</p>
+<P>In stock</p> <button type="button">Add to cart</button>
+     <hr>
+
+      <img src="_images/ps5_pro2.jpg" alt="Playstation 5" width="400" height="300">
+     <p>PRODUCT: Playstation 5 Pro PS5 1TB White Console</p>
+     <p>PRICE: €776.00</p>
+<P>In stock</p> <button type="button">Add to cart</button>
+     <hr>
+
+  <img src="_images/ps5_controller2.jpg" alt="Playstation 5 DualSense controller" width="400" height="300">
+     <p>PRODUCT: PlayStation 5 Dualsense Wireless Controllers</p>
+     <p>PRICE: €74.99 each</p>
+<P>In stock</p> <button type="button">Add to cart</button>
+     <hr>
+
+<img src="_images/ps5_headset2.avif" alt="r" width="400" height="300">
+     <p>PRODUCT: PULSE Elite™ Wireless Headset Sony PULSE Elite - White - Wireless Headset - Sony PlayStation 5</p>
+     <p>PRICE: €149.90 each</p>
+<P>In stock</p> <button type="button">Add to cart</button>
+     <hr>
+
+<img src="_images/ps5_covers2.jpg" alt="r" width="400" height="300">
+     <p>PRODUCT: PS5 Console Covers</p>
+     <p>PRICE: €64.99 each</p>
+<P>In stock</p> <button type="button">Add to cart</button>
+     <hr>
+     <img src="_images/ps_vr.jpg" alt="Playstation VR2" width="500" height="300">
+     <p>PRODUCT: PlayStation VR2</p>
+     <p>PRICE: €448.00</p>
+<P>In stock</p> <button type="button">Add to cart</button>
+     <hr>
+
+     <img src="_images/hd_camera.webp" alt="r" width="500" height="300">
+     <p>PRODUCT: HD Camera</p>
+     <p>PRICE: €59.99 each</p>
+<P>In stock</p> <button type="button">Add to cart</button>
+     <hr>
+
+<img src="_images/ps4_original22.jpg" alt="Playstation 4 original" width="500" height="400">
+        <p>PRODUCT: Playstation 4 500GB</p>
+        <p>PRICE: €349.99</p>
+        <P>In stock</p> <button type="button">Add to cart</button>
+<hr>
+     <img src="_images/PS4_slim2.jpg" alt="Playstation 4 slim" width="700" height="350">
+     <p>PRODUCT: Playstation 4 - Slim - 500GB Black Console</p>
+     <p>PRICE: €299.99</p>
+     <P>In stock</p> <button type="button">Add to cart</button>
+    <hr>
+        <img src="_images/PS4_pro2.jpg" alt="Playstation 4 Pro" width="700" height="350">
+        <p>PRODUCT: Playstation 4 Pro - 1TB Black Console</p>
+        <p>PRICE: €399.99</p>
+        <P>In stock</p> <button type="button">Add to cart</button>
+<hr>
     
+        <img src="_images/ps4_controller2.jpeg" width="500" height="300">
+        <p>PRODUCT: PlayStation 4 DualShock Wireless Controllers</p>
+        <p>PRICE: €59.99 each</p>
+        <P>In stock</p> <button type="button">Add to cart</button>
+    <hr>
+
+    <img src="_images/ps4_camera.jpg" alt="r" width="500" height="300">
+        <p>PRODUCT: PlayStation Camera for PS4</p>
+        <p>PRICE: €49.99 each</p>
+        <P>In stock</p> <button type="button">Add to cart</button>
+    <hr>
+<footer style="text-align: center; padding: 10px; background-color: #f1f1f1; margin-top: 20px;">
+    <p>&copy; 2024 SONY. All rights reserved.</p>
 </body>
 </html>
